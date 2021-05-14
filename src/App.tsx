@@ -56,7 +56,7 @@ export default function App() {
     setCidade2(selectOption.value);
   }
   const resultKm = (Number(resultByCube) / 1000).toFixed(2);
-  const resultMilhas = Number(resultByPoint).toFixed(2)
+  const resultMilhas = Number(resultByPoint).toFixed(2);
 
   return (
     <S.Container>
@@ -81,16 +81,22 @@ export default function App() {
               {cidade2 === 4855 || cidade1 === 5222 ? (
                 <WaitImage />
               ) : (
+                
                 <S.ContainerResult>
                   <div>
-                    <S.ResultDistance>{resultMilhas}<span> Milhas</span></S.ResultDistance>
+                    <S.ResultDistance>
+                      {resultMilhas}
+                      <span> Milhas</span>
+                    </S.ResultDistance>
                     <img src={milhasImage} alt='' />
                   </div>
                   <div>
-                    <S.ResultDistance>{resultKm}<span> Quilômetros</span></S.ResultDistance>
+                    <S.ResultDistance>
+                      {resultKm}
+                      <span> Quilômetros</span>
+                    </S.ResultDistance>
                     <img src={kmImage} alt='' />
                   </div>
-
                 </S.ContainerResult>
               )}
             </>
