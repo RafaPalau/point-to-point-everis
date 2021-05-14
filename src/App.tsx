@@ -55,7 +55,8 @@ export default function App() {
   function handleChangeCitie2(selectOption: any) {
     setCidade2(selectOption.value);
   }
-  const distancia = Number(resultByCube) / 1000;
+  const resultKm = (Number(resultByCube) / 1000).toFixed(2);
+  const resultMilhas = Number(resultByPoint).toFixed(2)
 
   return (
     <S.Container>
@@ -82,16 +83,14 @@ export default function App() {
               ) : (
                 <S.ContainerResult>
                   <div>
-                    <h2>{`Distancia de ${Number(resultByPoint).toFixed(
-                      0
-                    )} milhas`}</h2>
+                    <S.ResultDistance>{resultMilhas}<span> Milhas</span></S.ResultDistance>
                     <img src={milhasImage} alt='' />
                   </div>
-
                   <div>
-                    <h2>{`Distancia de ${Number(distancia).toFixed(0)} km`}</h2>
+                    <S.ResultDistance>{resultKm}<span> Quilômetros</span></S.ResultDistance>
                     <img src={kmImage} alt='' />
                   </div>
+
                 </S.ContainerResult>
               )}
             </>

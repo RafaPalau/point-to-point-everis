@@ -2,16 +2,15 @@ import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
 background: #12151C;
-height: 5rem;
+height: 10rem;
 color: #fff;
 display: flex;
 flex-direction: column;
 align-items: center;
 padding: 2rem 4rem;
-border-bottom: 1px solid var(--gray-100);
 
 @media(max-width: 780px){
-    height: 7rem;
+    height: 10rem;
     padding: 1.5rem 2rem;
   }
 
@@ -21,7 +20,7 @@ h2{
   font-size: 2rem;
   font-weight: 600;
   font-family: 'Lexend', sans-serif;
-  color: var(--gray-800);
+
 
   @media(max-width: 420px){
     font-size: 1.4rem;
@@ -35,8 +34,7 @@ p{
   text-align: center;
   font-weight: 600;
   font-family: 'Lexend', sans-serif;
-  color: var(--gray-800);
-
+ margin-top: 1rem;
   @media(max-width: 420px){
     font-size: 0.8rem;
     font-weight: 400;

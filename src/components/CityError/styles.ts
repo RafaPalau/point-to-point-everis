@@ -7,7 +7,7 @@ export const LinkBack = styled.a`
   display: flex;
   align-items: center;
   &:hover {
-    opacity: 0.7;
+    opacity: 0.9;
   }
   > svg {
     font-size: 18px;
@@ -20,10 +20,12 @@ max-width: 960px;
 display: flex;
 justify-content: center;
 flex-direction: column;
-margin: 0 auto;
+margin: 1rem auto;
+padding: 1rem;
 h2{
   font-family: 'Roboto', sans-serif;
-  color: #808080;;
+  color: #808080;
+  padding: 1.5rem;
 }
 `;
 

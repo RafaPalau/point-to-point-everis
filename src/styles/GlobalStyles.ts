@@ -9,7 +9,6 @@ export default createGlobalStyle`
 }
 :root {
   --white: #FFF;
-
   --gray-50: #F7F8FA;
   --gray-100: #E6E8EB;
   --gray-200: #AFB2B1;
@@ -29,14 +28,9 @@ export default createGlobalStyle`
 body{
   background: var(--gray-50);
 }
-body, input, textarea, button{
-  font-family: 'Inter', sans-serif;
-  color: var(--gray-500);
-}
+
 h1, h2, h3, h4, h5, h6{
   font-weight: 600;
-  font-family: 'Lexend', sans-serif;
-  color: var(--gray-800)
 }
 h1{
   font-size: 2rem;
