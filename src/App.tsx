@@ -5,6 +5,7 @@ import * as S from "./styles";
 import { CityError } from "../src/components/CityError";
 import { WaitImage } from "./components/WaitImage";
 
+import waitImage from "../src/assets/waitImage.svg";
 interface CitiesProps {
   id: number;
   name: string;
@@ -75,29 +76,23 @@ export default function App() {
                 ></Select>
               </S.Form>
 
-            
-
               {cidade2 === 4855 || cidade1 === 5222 ? (
                 <WaitImage />
               ) : (
                 <S.ContainerResult>
                   <div>
-
-                  <h2>{`Distancia de ${Number(resultByPoint).toFixed(
-                    0
-                  )} milhas`}</h2>
-
+                    <h2>{`Distancia de ${Number(resultByPoint).toFixed(
+                      0
+                    )} milhas`}</h2>
+                    <img src={waitImage} alt='' />
                   </div>
 
                   <div>
-
-                  <h2>{`Distancia de ${Number(distancia).toFixed(0)} km`}</h2>
+                    <h2>{`Distancia de ${Number(distancia).toFixed(0)} km`}</h2>
+                    <img src={waitImage} alt='' />
                   </div>
-                 
-                 
                 </S.ContainerResult>
               )}
-            
             </>
           )}
         </div>
