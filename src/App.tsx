@@ -5,7 +5,8 @@ import * as S from "./styles";
 import { CityError } from "../src/components/CityError";
 import { WaitImage } from "./components/WaitImage";
 
-import waitImage from "../src/assets/waitImage.svg";
+import kmImage from "../src/assets/kmImage.svg";
+import milhasImage from "../src/assets/milhasImage.svg";
 interface CitiesProps {
   id: number;
   name: string;
@@ -84,12 +85,12 @@ export default function App() {
                     <h2>{`Distancia de ${Number(resultByPoint).toFixed(
                       0
                     )} milhas`}</h2>
-                    <img src={waitImage} alt='' />
+                    <img src={milhasImage} alt='' />
                   </div>
 
                   <div>
                     <h2>{`Distancia de ${Number(distancia).toFixed(0)} km`}</h2>
-                    <img src={waitImage} alt='' />
+                    <img src={kmImage} alt='' />
                   </div>
                 </S.ContainerResult>
               )}
