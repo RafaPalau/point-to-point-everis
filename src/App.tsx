@@ -50,10 +50,12 @@ export default function App() {
 
   function handleChangeCitie1(selectOption: any) {
     setCidade1(selectOption.value);
+    localStorage.setItem("@desafio-everis:city1", JSON.stringify(cidade1));
   }
 
   function handleChangeCitie2(selectOption: any) {
     setCidade2(selectOption.value);
+    localStorage.setItem("@desafio-everis:city2", JSON.stringify(cidade2));
   }
   const resultKm = (Number(resultByCube) / 1000).toFixed(2);
   const resultMilhas = Number(resultByPoint).toFixed(2);
@@ -81,7 +83,6 @@ export default function App() {
               {cidade2 === 4855 || cidade1 === 5222 ? (
                 <WaitImage />
               ) : (
-                
                 <S.ContainerResult>
                   <div>
                     <S.ResultDistance>
